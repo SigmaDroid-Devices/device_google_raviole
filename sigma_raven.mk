@@ -17,7 +17,7 @@ include device/google/raviole/raven/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6 Pro
-PRODUCT_NAME := lineage_raven
+PRODUCT_NAME := sigma_raven
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3120
