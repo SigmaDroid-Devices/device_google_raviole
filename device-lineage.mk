@@ -18,6 +18,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# Face Unlock
+-include vendor/google/faceunlock/device.mk
+
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
 
