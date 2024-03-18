@@ -30,11 +30,18 @@ include hardware/google/pixel/powershare/device.mk
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
-# GMS
-BUILD_GMS_OVERLAYS_AND_PROPS := true
+# Gapps
 WITH_GMS := true
 WITH_GAPPS := true
+BUILD_GMS_OVERLAYS_AND_PROPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# Sigma build flags
+SIGMA_BUILD_TYPE := OFFICIAL
+SIGMA_MAINTAINER := ????????
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
 
 # Build necessary packages for vendor
 
